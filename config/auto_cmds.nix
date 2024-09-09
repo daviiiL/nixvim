@@ -8,6 +8,10 @@
 
   autoCmd = [
     {
+      event = ["BufEnter"];
+      command = "hi EndOfBuffer guibg=bg guifg=bg";
+    }
+    {
       group = "highlight_yank";
       event = ["TextYankPost"];
       pattern = "*";

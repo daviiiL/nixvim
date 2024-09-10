@@ -15,86 +15,76 @@ _: {
       ];
       sections = {
         lualine_a = [
+          # {
+          #   # name = "mode";
+          #   # icon = " ";
+          # }
+          "mode"
           {
-            name = "mode";
             icon = " ";
           }
         ];
         lualine_b = [
+          "branch"
           {
-            name = "branch";
             icon = "";
           }
+          "diff"
           {
-            name = "diff";
-            extraConfig = {
-              symbols = {
-                added = " ";
-                modified = " ";
-                removed = " ";
-              };
+            symbols = {
+              added = " ";
+              modified = " ";
+              removed = " ";
             };
           }
         ];
         lualine_c = [
+          "diagnostics"
           {
-            name = "diagnostics";
-            extraConfig = {
-              sources = ["nvim_lsp"];
-              symbols = {
-                error = " ";
-                warn = " ";
-                info = " ";
-                hint = "󰝶 ";
-              };
+            sources = ["nvim_lsp"];
+            symbols = {
+              error = " ";
+              warn = " ";
+              info = " ";
+              hint = "󰝶 ";
             };
           }
-          {
-            name = "navic";
-          }
+          "navic"
         ];
         lualine_x = [
+          "filetype"
           {
-            name = "filetype";
-            extraConfig = {
-              icon_only = true;
-              separator = "";
-              padding = {
-                left = 1;
-                right = 0;
-              };
+            icon_only = true;
+            separator = "";
+            padding = {
+              left = 1;
+              right = 0;
             };
           }
+          "filename"
           {
-            name = "filename";
-            extraConfig = {
-              path = 1;
-            };
+            path = 1;
           }
-          {
-            name.__raw = ''
-              function()
-                local icon = " "
-                local status = require("copilot.api").status.data
-                return icon .. (status.message or " ")
-              end,
-
-              cond = function()
-               local ok, clients = pcall(vim.lsp.get_clients, { name = "copilot", bufnr = 0 })
-               return ok and #clients > 0
-              end,
-            '';
-          }
+          # {
+          #   name.__raw = ''
+          #     function()
+          #       local icon = " "
+          #       local status = require("copilot.api").status.data
+          #       return icon .. (status.message or " ")
+          #     end,
+          #
+          #     cond = function()
+          #      local ok, clients = pcall(vim.lsp.get_clients, { name = "copilot", bufnr = 0 })
+          #      return ok and #clients > 0
+          #     end,
+          #   '';
+          # }
         ];
         lualine_y = [
-          {
-            name = "progress";
-          }
+          "progress"
         ];
         lualine_z = [
-          {
-            name = "location";
-          }
+          "location"
         ];
       };
     };

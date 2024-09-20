@@ -11,7 +11,7 @@
         lua-ls = {enable = true;};
         nil-ls = {enable = true;};
         marksman = {enable = true;};
-        pyright = {enable = true;};
+        pyright = {enable = false;};
         gopls = {enable = true;};
         terraformls = {enable = true;};
         tsserver = {enable = true;};

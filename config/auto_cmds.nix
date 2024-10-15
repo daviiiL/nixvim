@@ -41,7 +41,7 @@
         "neo-tree"
         "Trouble"
         "trouble"
-        "notify"
+        # "notify"
       ];
       callback = {
         __raw = ''

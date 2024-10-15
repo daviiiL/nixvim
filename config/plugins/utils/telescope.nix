@@ -20,28 +20,16 @@
       };
     };
     keymaps = {
-      "<leader><space>" = {
-        action = "find_files";
-        options = {
-          desc = "Find project files";
-        };
-      };
-      "<leader>/" = {
+      "<leader>fg" = {
         action = "live_grep";
         options = {
           desc = "Grep (root dir)";
         };
       };
-      "<leader>:" = {
+      "<leader>fh" = {
         action = "command_history";
         options = {
           desc = "Command History";
-        };
-      };
-      "<leader>b" = {
-        action = "buffers";
-        options = {
-          desc = "+buffer";
         };
       };
       "<leader>ff" = {
@@ -51,18 +39,12 @@
         };
       };
       "<leader>fr" = {
-        action = "live_grep";
-        options = {
-          desc = "Find text";
-        };
-      };
-      "<leader>fR" = {
         action = "resume";
         options = {
           desc = "Resume";
         };
       };
-      "<leader>fg" = {
+      "<leader>fo" = {
         action = "oldfiles";
         options = {
           desc = "Recent";
@@ -164,7 +146,7 @@
           desc = "Resume";
         };
       };
-      "<leader>uC" = {
+      "<leader>th" = {
         action = "colorscheme";
         options = {
           desc = "Colorscheme preview";

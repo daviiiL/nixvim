@@ -40,7 +40,7 @@
     }
     {
       mode = "n";
-      key = "<C-h>";
+      key = "<C-a>";
       action = "<C-w>h";
       options = {
         desc = "Go to Left Window";
@@ -49,7 +49,7 @@
     }
     {
       mode = "n";
-      key = "<C-j>";
+      key = "<C-s>";
       action = "<C-w>j";
       options = {
         desc = "Go to Lower Window";
@@ -58,7 +58,7 @@
     }
     {
       mode = "n";
-      key = "<C-k>";
+      key = "<C-w>";
       action = "<C-w>k";
       options = {
         desc = "Go to Upper Window";
@@ -67,7 +67,7 @@
     }
     {
       mode = "n";
-      key = "<C-l>";
+      key = "<C-d>";
       action = "<C-w>l";
       options = {
         desc = "Go to Right Window";
